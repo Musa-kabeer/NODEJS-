@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Node project || ☺</title>
+  </head>
+  <body>
+    <div class="w-full h-screen bg-gray-300 flex items-center flex-col py-8">
+      <div class="w-5/6 h-2/6 md:w-4/6">
+        <div
+          class="w-full h-full bg-slate-700 flex justify-center items-center flex-col"
+        >
+          <h2 class="text-3xl font-medium text-white">Task Manager</h2>
+          <div class="w-full flex justify-center items-center flex-col mt-4">
+            <input
+              type="text"
+              placeholder="e.g wash dishes"
+              class="w-4/6 h-10 px-2 outline-none rounded-md text-xs"
+            />
+            <button
+              class="w-4/6 rounded-md bg-red-100 text-xs py-2 px-4 mt-4"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+        <div>
+          <div class=""></div>
+        </div>
+      </div>
+      <div class="w-5/6 w-full mt-12">
+        <div class="w-full h-96 md:w-4/6 overflow-y-scroll">
+          <!-- EACH TASK  -->
+          <div
+            class="flex justify-between items-center px-4 py-1 mt-2 bg-white"
+          >
+            <div class="flex justify-between items-center w-24">
+              <span class="text-xs text-green-900 font-bold"
+                ><i class="fa-solid fa-circle-check"></i
+              ></span>
+              <h3 class="font-bold text-base">First Task</h3>
+            </div>
+            <div class="w-10 flex justify-between items-center">
+              <span class="text-xs text-green-900 font-bold cursor-pointer"
+                ><i class="fa-solid fa-pen-to-square"></i
+              ></span>
+              <span class="text-xs text-red-900 font-bold cursor-pointer"
+                ><i class="fa-sharp fa-solid fa-trash"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
